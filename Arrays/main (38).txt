@@ -1,0 +1,23 @@
+#include <stdio.h>
+
+int main()
+{
+    int size; // an integer is created to hold the size of the array
+    printf("please enter the size of the array");//print please enter the size of the array
+    scanf("%d", &size);//wait of the user input of the size 
+    int array[size]; // creates an array with the size equals to the value in size variable
+    int index = 0;// create a variable which Index is equally to 0
+    while(index <size){//this is loop for it to repeat it self 
+        printf("Please enter a number"); print please enter the number 
+        scanf("%d", &array[index]); );//wait of the user input of the number
+        index++;//this is adding 1 to index
+        
+    }
+    
+    return 0;
+}
+Output 
+3
+1
+2
+3

@@ -1,0 +1,57 @@
+//program that allows a user to enter
+//a set of numbers. The user can decide the size of this set when the program runs.
+#include <stdio.h>
+
+int main()
+{ 
+    int size;
+    int i;
+    printf("please enter the size of array\n");
+    scanf("%d",&size);
+    int array[size];
+    int index = 0;
+    while(index < size){
+        printf("please enter a number");
+        scanf("%d", &array[index]);
+        index++;
+    }
+    
+    index = 0;   
+    while(index < size){
+        printf("%d \n", array[index]);
+        index++;
+    }
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

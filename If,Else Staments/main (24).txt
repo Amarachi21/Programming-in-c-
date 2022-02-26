@@ -1,0 +1,32 @@
+// write a program to take a number as an input from the user repeatedly and stop when the input number is 528, but hint the user
+// after every input, (i.e) tell the user if the input number is greater or less than the answer(528). The user will only have 
+// 5 turns to guess the right answer. If the user runs out of turns, print "Sorry you have run out of turns"
+
+#include <stdio.h>
+
+int main()
+{ 
+    int guess_number = 0, answer = 528, count = 0;
+   printf("you have 5 chance to guess the right answer\n");
+    while(guess_number != answer && count < 5){
+        printf("Please enter a number \n");
+        scanf("%d", &guess_number);
+        count++;
+        if(guess_number > answer){
+            printf("Try guessing a lower number and you have %d chances left \n", (5 - count));
+        }else if(guess_number < answer){
+            printf("Try guessing a higher number && you have %d chances left \n", (5 - count));
+            
+        }
+    }
+    if(guess_number == answer){
+        printf("congratulations the asnwer is right \n");
+    }else {
+       printf("sorry you ran out out tries \n");
+    
+    }
+    
+    return 0;
+}
+
+

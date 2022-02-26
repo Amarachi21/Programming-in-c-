@@ -1,0 +1,56 @@
+﻿/******************************************************************************
+
+You are asked to develop a program that allows a user to enter 
+a set of numbers. The user can decide the size of this set when the program runs. Your 
+program must find the highest and lowest number in the set and display both to standard 
+output
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int size;// an integer variable is created and can hold only integers
+    int index = 0;// an integer with name ‘index’ is created and it’s value is 0
+    
+    printf("Please enter the size of the array");//print the size of the array
+    scanf("%d", &size); //wait of the user input of the size 
+    int array[size];// creates an array with the value in size variable
+    
+    
+    while(index < size){ //while loop to repeat until index reaches size
+        printf("please enter any number");//print enter the number 
+        scanf("%d",&array[index]);//read input into elements of the array 
+        index++;//this is adding 1 to index
+    }
+    int sum = 0;// an integer with name ‘sum’ is created and it’s value is 0
+    index = 0;// an integer with name ‘index’ is created and it’s value is 0
+    while(index < size){ //while loop to repeat until index reaches size
+        sum = sum + array[index];//this add the number you enter in the array. 
+        index++; ++;//this is adding 1 to index
+    }
+    
+    int highest=array[0];
+    index=0;// an integer with name ‘index’ is created and it’s value is 0
+    while(index < size){//while loop to repeat until index reaches size
+        if(array[index] > highest){
+            highest=array[index];
+        }
+        index++;//this is adding 1 to index
+    }
+    printf("The highest number is %d", highest);
+    
+    int lowest=array[0];
+    index=0;// an integer with name ‘index’ is created and it’s value is 0
+    while(index < size){//while loop to repeat until index reaches size
+        if(array[index] < lowest){
+            lowest=array[index];
+        }
+        index++;//this is adding 1 to index
+    }
+    printf("\nThe lowest number is %d", lowest);
+    
+    printf("\nSum = %d" ,sum);//this print the sum number
+}
+

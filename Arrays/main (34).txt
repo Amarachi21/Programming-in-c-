@@ -1,0 +1,55 @@
+#include <stdio.h>
+
+int main()
+{ 
+    int x[4]; // array is created with 4 elements with name ‘x’
+    int index = 0; //array is created with index equally to 0 because index started with 0 XXXXXX
+// an integer with name ‘index’ is created and it’s value is 0
+
+    while(index < 4){ //while loop to repeat until index reaches size
+        printf("Plase enter a number\n"); //print enter the number 
+        scanf("%d",&x[index]); );//read input into elements of the array 
+        index++; //this is adding 1 to index
+    }
+
+    index = 0;   //this is index which equally to 0
+    while(index < 4){ //while loop to repeat until index reaches size
+        printf("%d \n", x[index]); );//prints the elements of the array
+        index++; //this is adding 1 to index
+    }
+    
+    
+    
+    return 0;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

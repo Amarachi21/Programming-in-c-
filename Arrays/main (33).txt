@@ -1,0 +1,45 @@
+#include <stdio.h>
+
+int main()
+{ 
+    int y; // an integer variable is created and can hold only one integer
+    int x[10]; // array is created with 10 elements 
+    x[0] = 99;//this is array with index 0 which hold 99
+    x[1] = 100; ;//this is array with index 1 which hold  100
+    printf("%d", x[0]);//this is print value in index 0 which is 99
+    
+    
+    
+    return 0;
+}
+
+
+Output 99
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

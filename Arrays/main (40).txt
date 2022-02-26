@@ -1,0 +1,40 @@
+/******************************************************************************
+
+You are asked to develop a program that allows a user to enter 
+a set of numbers. The user can decide the size of this set when the program runs. Your 
+program must find the highest and lowest number in the set and display both to standard 
+output
+
+*******************************************************************************/
+
+#include <stdio.h>
+
+int main()
+{
+    int size;
+    int index = 0;
+    
+    printf("Please enter the size of the array");
+    scanf("%d", &size);
+    int array[size];
+    
+    
+    while(index < size){
+        printf("please enter any number");
+        scanf("%d",&array[index]);
+        index++;
+    }
+    
+    int highest=array[0];
+    index=0;
+    while(index < size){
+        if(array[index] > highest){
+            highest=array[index];
+        }
+        index++;
+    }
+    printf("The highest number is %d", highest);
+    
+    
+}
+
